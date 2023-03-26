@@ -10,8 +10,6 @@ public class SingletonV2 {
 
     static {
         try {
-            String str = null;
-            str.equals("1");
             instance = new SingletonV2();
         } catch (Exception e) {
             throw new RuntimeException("Error during creation an instance of SingletonV2");
