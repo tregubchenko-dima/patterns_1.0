@@ -3,17 +3,16 @@ package pattern.creational.factory.method;
 import pattern.creational.factory.method.logic.AnimalCreator;
 import pattern.creational.factory.method.logic.CatCreator;
 import pattern.creational.factory.method.logic.DogCreator;
-import pattern.creational.factory.method.model.Cat;
-import pattern.creational.factory.method.model.Dog;
+import pattern.creational.factory.method.model.Animal;
 
 public class AnimalCreateTest {
 
     public static void main(String[] args) {
-        AnimalCreator<Cat> catCreator = new CatCreator();
-        AnimalCreator<Dog> dogCreator = new DogCreator();
+        AnimalCreator catCreator = new CatCreator();
+        AnimalCreator dogCreator = new DogCreator();
 
-        Cat cat = catCreator.createAnimal();
-        Dog dog = dogCreator.createAnimal();
+        Animal cat = catCreator.createAnimal();
+        Animal dog = dogCreator.createAnimal();
 
         cat.makeSound();
         dog.makeSound();

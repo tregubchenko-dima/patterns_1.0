@@ -1,11 +1,12 @@
 package pattern.creational.factory.method.logic;
 
+import pattern.creational.factory.method.model.Animal;
 import pattern.creational.factory.method.model.Cat;
 
-public class CatCreator implements AnimalCreator<Cat>{
+public class CatCreator implements AnimalCreator{
 
     @Override
-    public Cat createAnimal() {
+    public Animal createAnimal() {
         return new Cat();
     }
 }
